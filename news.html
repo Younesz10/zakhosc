@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News | Zakho Sport Club</title>
+  <title>Zakho SC Latest News & Updates | Club News | Zakho Sport Club</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/png" href="assets/images/zakhosc-logo.png">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     .news-list {
@@ -35,18 +38,47 @@
       font-size: 0.95rem;
       margin-bottom: 0.5rem;
     }
-    .news-summary {
-      color: var(--zakho-black);
-      font-size: 1rem;
-    }
+         .news-summary {
+       color: var(--zakho-black);
+       font-size: 1rem;
+     }
+     .featured-news {
+       border: 2px solid var(--zakho-red);
+       background: linear-gradient(135deg, var(--zakho-white) 0%, #f8f8f8 100%);
+     }
+     .news-images {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+       gap: 1rem;
+       margin: 1rem 0;
+     }
+     .news-image {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+       border-radius: 0.5rem;
+       border: 1px solid var(--zakho-dark);
+       transition: transform 0.3s ease;
+     }
+     .news-image:hover {
+       transform: scale(1.05);
+     }
+     @media (max-width: 700px) {
+       .news-images {
+         grid-template-columns: 1fr;
+       }
+       .news-image {
+         height: 180px;
+       }
+     }
   </style>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="navbar-logo">
-        <img src="assets/images/zakhosc-logo.png" alt="Zakho SC Logo">
-        <span>Zakho Sport Club</span>
+        <img src="assets/images/zakhosc-logo.png" alt="Zakho SC Logo" style="height:60px;">
+        <span>ZAKHO SC</span>
       </div>
       <div class="hamburger" aria-label="Open menu" tabindex="0">
         <span></span>
@@ -65,17 +97,25 @@
     </nav>
   </header>
   <main>
-    <h1 style="color:var(--zakho-red); text-align:center; margin:2rem 0 1.5rem 0;">Latest News</h1>
-    <div class="news-list">
-      <div class="news-card">
-        <div class="news-title">Zakho SC Signs New Midfielder</div>
-        <div class="news-date">April 10, 2025</div>
-        <div class="news-summary">Zakho Sport Club is excited to announce the signing of a talented new midfielder to strengthen the squad for the upcoming season. More details to follow soon.</div>
-      </div>
+    <h1 style="color:var(--zakho-red); text-align:center; margin:2rem 0 1.5rem 0;">Zakho SC Latest News & Club Updates</h1>
+         <div class="news-list">
+                               <a href="news-sherko-signing.html" class="news-card featured-news news-link">
+           <div class="news-title">Zakho SC Lands Star Signing – Sherko Karim Joins for 2025-26 Season</div>
+                       <div class="news-date">July 24, 2025</div>
+           <div class="news-thumbnail">
+             <img src="assets/images/sherko-signing-1.png" alt="Sherko Karim official signing ceremony with Zakho SC jersey" class="news-image">
+           </div>
+           <div class="news-summary">In a major move this summer, Zakho SC has officially signed Sherko Karim, the former captain of Erbil SC, marking one of the biggest transfer headlines of the off-season. The 28-year-old midfielder brings 16 international appearances and valuable leadership experience to strengthen Zakho's campaign in the Iraq Stars League.</div>
+         </a>
+       <div class="news-card">
+         <div class="news-title">Zakho SC Signs New Midfielder</div>
+         <div class="news-date">April 10, 2025</div>
+         <div class="news-summary">Zakho Sport Club is excited to announce the signing of a talented new midfielder to strengthen the squad for the upcoming season. More details to follow soon.</div>
+       </div>
       <div class="news-card">
         <div class="news-title">Victory in the Derby Against Erbil</div>
         <div class="news-date">March 28, 2025</div>
-        <div class="news-summary">Zakho SC secured a thrilling 2-1 victory over rivals Erbil in a packed Zakho International Stadium. Fans celebrated a memorable night of football.</div>
+                 <div class="news-summary">Zakho SC secured a thrilling 2-1 victory over rivals Erbil in a packed Zakho International Stadium. Fans celebrated a memorable night of football in the Iraq Stars League.</div>
       </div>
       <div class="news-card">
         <div class="news-title">Upcoming Home Match: Zakho vs Baghdad</div>
