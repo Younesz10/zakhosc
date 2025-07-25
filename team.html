@@ -30,7 +30,24 @@
       align-items: center;
       gap: 0.5rem;
       border: 1px solid var(--zakho-dark);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.6s ease-out;
     }
+    
+    .player-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    
+    /* Staggered animations for player cards */
+    .player-card:nth-child(1) { animation-delay: 0.1s; }
+    .player-card:nth-child(2) { animation-delay: 0.2s; }
+    .player-card:nth-child(3) { animation-delay: 0.3s; }
+    .player-card:nth-child(4) { animation-delay: 0.4s; }
+    .player-card:nth-child(5) { animation-delay: 0.5s; }
+    .player-card:nth-child(6) { animation-delay: 0.6s; }
+    .player-card:nth-child(7) { animation-delay: 0.7s; }
+    .player-card:nth-child(8) { animation-delay: 0.8s; }
     .player-photo {
       font-size: 2.5rem;
       color: var(--zakho-red);
@@ -143,7 +160,9 @@
     </nav>
   </header>
   <main>
-    <h1 style="color:var(--zakho-red); text-align:center; margin:2rem 0 1.5rem 0;">Zakho SC Team Roster & Players</h1>
+    <section class="hero" style="text-align:center; margin:2rem 0 1.5rem 0;">
+      <h1 style="color:var(--zakho-red);">Zakho SC Team Roster & Players</h1>
+    </section>
     <section class="team-section">
       <h2 class="team-group-title">Goalkeepers</h2>
       <div class="player-grid">
