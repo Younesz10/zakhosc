@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Zakho Sport Club</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/zakhosc-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .news-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .news-card {
+      background: var(--zakho-white);
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 1.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border: 1px solid var(--zakho-dark);
+    }
+    .news-title {
+      color: var(--zakho-red);
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 0.25rem;
+    }
+    .news-date {
+      color: #888;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .news-summary {
+      color: var(--zakho-black);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/images/zakhosc-logo.png" alt="Zakho SC Logo">
+        <span>Zakho Sport Club</span>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="news.html" class="active">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 style="color:var(--zakho-red); text-align:center; margin:2rem 0 1.5rem 0;">Latest News</h1>
+    <div class="news-list">
+      <div class="news-card">
+        <div class="news-title">Zakho SC Signs New Midfielder</div>
+        <div class="news-date">April 10, 2025</div>
+        <div class="news-summary">Zakho Sport Club is excited to announce the signing of a talented new midfielder to strengthen the squad for the upcoming season. More details to follow soon.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title">Victory in the Derby Against Erbil</div>
+        <div class="news-date">March 28, 2025</div>
+        <div class="news-summary">Zakho SC secured a thrilling 2-1 victory over rivals Erbil in a packed Zakho International Stadium. Fans celebrated a memorable night of football.</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title">Upcoming Home Match: Zakho vs Baghdad</div>
+        <div class="news-date">March 20, 2025</div>
+        <div class="news-summary">Join us at Zakho International Stadium for our next home match against Baghdad. Let's support the team and aim for another win!</div>
+      </div>
+      <div class="news-card">
+        <div class="news-title">Youth Academy Trials Announced</div>
+        <div class="news-date">March 5, 2025</div>
+        <div class="news-summary">Zakho SC is holding open trials for its youth academy. Young talents are encouraged to participate and showcase their skills to join the club's future stars.</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-social">
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div>© 2025 Zakho Sport Club</div>
+  </footer>
+</body>
+</html> 

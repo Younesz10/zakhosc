@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Zakho Sport Club</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/zakhosc-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .gallery-item {
+      background: var(--zakho-white);
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid var(--zakho-dark);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-caption {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      color: var(--zakho-black);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/images/zakhosc-logo.png" alt="Zakho SC Logo">
+        <span>Zakho Sport Club</span>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 style="color:var(--zakho-red); text-align:center; margin:2rem 0 1.5rem 0;">Gallery</h1>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?soccer,stadium" alt="Match 1">
+        <div class="gallery-caption">Match vs Erbil – Oct 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?football,team" alt="Match 2">
+        <div class="gallery-caption">Training Session – Sep 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?soccer,celebration" alt="Match 3">
+        <div class="gallery-caption">Goal Celebration – Aug 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?football,stadium" alt="Match 4">
+        <div class="gallery-caption">Home Game – Jul 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?soccer,match" alt="Match 5">
+        <div class="gallery-caption">Match vs Baghdad – Jun 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?football,goalkeeper" alt="Match 6">
+        <div class="gallery-caption">Goalkeeper Save – May 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?soccer,training" alt="Match 7">
+        <div class="gallery-caption">Team Training – Apr 2024</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://source.unsplash.com/400x300/?football,fan" alt="Match 8">
+        <div class="gallery-caption">Fans in Stadium – Mar 2024</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-social">
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div>© 2025 Zakho Sport Club</div>
+  </footer>
+</body>
+</html> 

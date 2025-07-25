@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team | Zakho Sport Club</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/zakhosc-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .team-section { margin-bottom: 2.5rem; }
+    .team-group-title { color: var(--zakho-red); margin-bottom: 1rem; }
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .player-card {
+      background: var(--zakho-white);
+      border-radius: 1rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 1.25rem 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid var(--zakho-dark);
+    }
+    .player-photo {
+      font-size: 2.5rem;
+      color: var(--zakho-red);
+      background: var(--zakho-gray);
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .player-name { font-weight: 600; }
+    .player-info { font-size: 0.95rem; color: #555; }
+    .player-flag { font-size: 1.2rem; margin-right: 0.3rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img src="assets/images/zakhosc-logo.png" alt="Zakho SC Logo">
+        <span>Zakho Sport Club</span>
+      </div>
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html" class="active">Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 style="color:var(--zakho-red); text-align:center; margin:2rem 0 1.5rem 0;">Meet the Team</h1>
+    <section class="team-section">
+      <h2 class="team-group-title">Goalkeepers</h2>
+      <div class="player-grid">
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#1 Omran Zaki</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#12 Ali Kadhim</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#13 Ali Abdul-Kareem</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+      </div>
+    </section>
+    <section class="team-section">
+      <h2 class="team-group-title">Defenders</h2>
+      <div class="player-grid">
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#2 Mohammad Abu Hashish</div><div class="player-info"><span class="player-flag">🇯🇴</span> Jordan</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#3 Patrick Marcelino</div><div class="player-info"><span class="player-flag">🇧🇷</span> Brazil</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#4 Shivan Jameel</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#17 Yousef Raed</div><div class="player-info"><span class="player-flag">🇯🇴</span> Jordan</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#21 Ramadhan Sediq</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#30 Ahmed Ibrahim (C)</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#32 Alaa Raed</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#33 Ahmed Nadhim</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+      </div>
+    </section>
+    <section class="team-section">
+      <h2 class="team-group-title">Midfielders</h2>
+      <div class="player-grid">
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#6 Lass Hamawand</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#7 Nasser Al-Gahwashi</div><div class="player-info"><span class="player-flag">🇾🇪</span> Yemen</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#14 Amjad Attwan</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#16 Hady Saleh Karim</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#19 Hamid Haji</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#23 Moisés Wolschick</div><div class="player-info"><span class="player-flag">🇧🇷</span> Brazil</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#25 Mohammed Ali Abbood</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#26 Aliyu Yau Adam</div><div class="player-info"><span class="player-flag">🇳🇬</span> Nigeria</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#35 Echeta Ugonna Deputy</div><div class="player-info"><span class="player-flag">🇳🇬</span> Nigeria</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#90 Jiloan Hamad</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+      </div>
+    </section>
+    <section class="team-section">
+      <h2 class="team-group-title">Forwards</h2>
+      <div class="player-grid">
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#10 Mahmoud Al-Aswad</div><div class="player-info"><span class="player-flag">🇸🇾</span> Syria</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#29 Gustavo Henrique</div><div class="player-info"><span class="player-flag">🇧🇷</span> Brazil</div></div>
+        <div class="player-card"><div class="player-photo"><i class="fas fa-user"></i></div><div class="player-name">#99 Ahmed Yasin</div><div class="player-info"><span class="player-flag">🇮🇶</span> Iraq</div></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-social">
+      <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div>© 2025 Zakho Sport Club</div>
+  </footer>
+</body>
+</html> 
