@@ -1,0 +1,92 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/team",
+      "destination": "/team.html"
+    },
+    {
+      "source": "/gallery",
+      "destination": "/gallery.html"
+    },
+    {
+      "source": "/highlights",
+      "destination": "/highlights.html"
+    },
+    {
+      "source": "/news",
+      "destination": "/news.html"
+    },
+    {
+      "source": "/news/sherko-signing",
+      "destination": "/news-sherko-signing.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/team.html",
+      "destination": "/team",
+      "permanent": true
+    },
+    {
+      "source": "/gallery.html",
+      "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/highlights.html",
+      "destination": "/highlights",
+      "permanent": true
+    },
+    {
+      "source": "/news.html",
+      "destination": "/news",
+      "permanent": true
+    },
+    {
+      "source": "/news-sherko-signing.html",
+      "destination": "/news/sherko-signing",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+} 

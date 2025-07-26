@@ -1,27 +1,37 @@
+# Enable URL rewriting
 RewriteEngine On
 
-# Redirect old .html URLs to clean URLs
-RewriteRule ^index\.html$ / [R=301,L]
-RewriteRule ^about\.html$ /about [R=301,L]
-RewriteRule ^team\.html$ /team [R=301,L]
-RewriteRule ^gallery\.html$ /gallery [R=301,L]
-RewriteRule ^highlights\.html$ /highlights [R=301,L]
-RewriteRule ^news\.html$ /news [R=301,L]
-RewriteRule ^news-sherko-signing\.html$ /news/sherko-signing [R=301,L]
+# Set the base directory (uncomment if needed)
+# RewriteBase /
 
-# Handle clean URLs - map them to actual HTML files
-RewriteRule ^$ index.html [L]
-RewriteRule ^about$ about.html [L]
-RewriteRule ^team$ team.html [L]
-RewriteRule ^gallery$ gallery.html [L]
-RewriteRule ^highlights$ highlights.html [L]
-RewriteRule ^news$ news.html [L]
-RewriteRule ^news/sherko-signing$ news-sherko-signing.html [L]
+# Ensure mod_rewrite is available
+<IfModule mod_rewrite.c>
+    # Redirect old .html URLs to clean URLs (301 permanent redirects)
+    RewriteRule ^index\.html$ / [R=301,L]
+    RewriteRule ^about\.html$ /about [R=301,L]
+    RewriteRule ^team\.html$ /team [R=301,L]
+    RewriteRule ^gallery\.html$ /gallery [R=301,L]
+    RewriteRule ^highlights\.html$ /highlights [R=301,L]
+    RewriteRule ^news\.html$ /news [R=301,L]
+    RewriteRule ^news-sherko-signing\.html$ /news/sherko-signing [R=301,L]
 
-# Ensure trailing slashes are handled
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ /$1 [R=301,L]
+    # Handle clean URLs - map them to actual HTML files
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^$ index.html [L]
+    RewriteRule ^about/?$ about.html [L]
+    RewriteRule ^team/?$ team.html [L]
+    RewriteRule ^gallery/?$ gallery.html [L]
+    RewriteRule ^highlights/?$ highlights.html [L]
+    RewriteRule ^news/?$ news.html [L]
+    RewriteRule ^news/sherko-signing/?$ news-sherko-signing.html [L]
+    RewriteRule ^test/?$ test-rewrite.html [L]
+
+    # Remove trailing slashes (optional)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ /$1 [R=301,L]
+</IfModule>
 
 # Security headers
 <IfModule mod_headers.c>
